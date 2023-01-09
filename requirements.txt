@@ -1,0 +1,6 @@
+odoo_test_helper
+cachetools==5.2.0
+unidecode
+chardet
+pytz
+pyyaml

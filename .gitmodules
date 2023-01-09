@@ -2,3 +2,7 @@
 	path = src/enterprise-contagra
 	url = git@github.com:contagra/odoo-enterprise-contagra.git
 	branch = 16.0
+[submodule "src/nuhome"]
+	path = src/nuhome
+	url = git@github.com:loopenergyio/odoo-nuhome
+	branch = 16.0

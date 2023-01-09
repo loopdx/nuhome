@@ -1,0 +1,41 @@
+{
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "RUN Odoo",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": false,
+      //"justMyCode": false,
+      "program": "~/Developer/Library/Odoo/odoo/odoo-bin",
+      "args": [
+        "--config=${workspaceFolder}/odoo.dev.conf",
+        "--dev=all",
+        //"--update=firefly",
+        "--without-demo=all",
+        "--limit-time-real=99999",
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+    },
+    {
+      "name": "INIT Odoo DB",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": false,
+      "program": "~/Developer/Library/Odoo/odoo/odoo-bin",
+      "args": [
+        "--config=${workspaceFolder}/odoo.dev.conf",
+        "--without-demo=all",
+        "--limit-time-real=99999",
+        "--dev=xml",
+        "-i base"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "odooScaffold.odooBinPath": "~/Developer/Library/Odoo/odoo/odoo-bin",
+  // use this so the autocompleate/goto definition will work with python extension
+  "python.autoComplete.extraPaths": [
+    "~/Developer/Library/Odoo/odoo/addons",
+    "~/Developer/Library/Odoo/odoo/",
+    "~/Developer/Library/Odoo/odoo/odoo/addons",
+    "${workspaceRoot}/addons",
+  ],
+  //"python.linting.pylintPath": "optional: path to python use if you have environment path",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  //load the pylint_odoo
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_odoo"
+  ],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: google, indent_width: 4, column_limit: 80}"
+  ],
+  //"python.formatting.yapfPath": "optional: path to python use if you have environment path",
+  // "python.linting.pycodestylePath": "optional: path to python use if you have environment path",
+  "python.linting.pycodestyleEnabled": false,
+  // add this auto-save option so the pylint will sow errors while editing otherwise
+  //it will only show the errors on file save
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  // The following will hide the compiled file in the editor/ add other file to hide them from editor
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "restructuredtext.confPath": "~/Developer/Library/Odoo/odoo/doc",
+  "python.analysis.extraPaths": [
+    "~/Developer/Library/Odoo/odoo/addons",
+    "~/Developer/Library/Odoo/odoo",
+    "~/Developer/Library/Odoo/odoo/addons"
+  ],
+  "cornflakes.linter.executablePath": "${workspaceFolder}/.venv/bin/flake8",
+  "sqltools.connections": [
+    {
+      "connectionTimeout": 30,
+      "database": "analytics",
+      "driver": "PostgreSQL",
+      "name": "analytics@localhost",
+      "password": "analytics",
+      "port": 5432,
+      "server": "127.0.0.1",
+      "username": "analytics"
+    },
+    {
+      "database": "odoo",
+      "driver": "PostgreSQL",
+      "name": "odoo@local",
+      "password": "odoo",
+      "port": 5432,
+      "server": "localhost",
+      "username": "odoo"
+    },
+    {
+      "database": "insurance",
+      "driver": "PostgreSQL",
+      "name": "insurance@local",
+      "password": "insurance",
+      "port": 5432,
+      "server": "localhost",
+      "username": "insurance"
+    },
+    {
+      "database": "enterpriseLive",
+      "driver": "PostgreSQL",
+      "name": "drive@prod",
+      "password": "Domp-ov-e-Ot-deT-Kot",
+      "port": 15432,
+      "server": "localhost",
+      "username": "enterprise"
+    },
+    {
+      "database": "atlas",
+      "driver": "PostgreSQL",
+      "name": "atlas@local",
+      "password": "atlas",
+      "port": 5432,
+      "server": "localhost",
+      "username": "atlas"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "api@local",
+      "database": "api",
+      "username": "api",
+      "password": "api"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "commerce@local",
+      "group": "local",
+      "database": "commerce",
+      "username": "commerce",
+      "password": "commerce"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 15432,
+      "driver": "PostgreSQL",
+      "group": "dublin",
+      "name": "specagri",
+      "database": "specagri",
+      "username": "commerce",
+      "password": "HTBUn3mJkEh9jGHvtpNP"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "sdx",
+      "group": "local",
+      "database": "sdx",
+      "username": "sdx",
+      "password": "sdx"
+    }
+  ],
+  "esbonio.sphinx.confDir": "~/Developer/Library/Odoo/odoo/doc",
+}
