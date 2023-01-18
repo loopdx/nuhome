@@ -4,7 +4,7 @@
 	branch = 16.0
 [submodule "src/nuhome"]
 	path = src/nuhome
-	url = git@github.com:loopenergyio/odoo-nuhome
+	url = git@github.com:loopenergyio/odoo-nuhome.git
 	branch = 16.0
 [submodule "src/addons"]
 	path = src/addons
