@@ -1,4 +1,4 @@
-# nuhome
+# The NuHome ERP built on Odoo
 
 Install Odoo into the virtual environment:
 
