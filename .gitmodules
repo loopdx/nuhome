@@ -10,3 +10,7 @@
 	path = src/addons
 	url = git@github.com:loopenergyio/loop-addons.git
 	branch = 16.0
+[submodule "src/solar"]
+	path = src/solar
+	url = git@github.com:loopenergyio/odoo-solar.git
+	branch = 16.0
